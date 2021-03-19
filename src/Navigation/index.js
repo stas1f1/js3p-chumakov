@@ -8,7 +8,7 @@ import {
 import Login from "../Screens/Login";
 import Movies from "../Screens/Movies";
 import Profile from "../Screens/Profile";
-//import Home from "../Screens/Home";
+import Main from "../Screens/Main";
 import store from "../store";
 
 function AuthenticatedRoute({ component: Component, ...rest }) {
@@ -37,12 +37,13 @@ class Navigation extends Component {
           <Route exact path="/login" component={Login} />
           <Route path="/movies" component={Movies} />
           <AuthenticatedRoute exact path="/profile" component={Profile} />
+          <Route path="*" component={Main} />
           {/*//
           <Route path="/movies" component={Movies} />
           //
           <AuthenticatedRoute exact path="/profile" component={Profile} />
           //
-          <Route path="*" component={Main} />
+
           */}
         </Switch>
       </Router>
