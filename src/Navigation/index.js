@@ -12,7 +12,6 @@ import Main from "../Screens/Main";
 import store from "../store";
 
 function AuthenticatedRoute({ component: Component, ...rest }) {
-  alert("routing, store state: ", store.getState().loggedIn);
   return (
     <Route
       {...rest}
