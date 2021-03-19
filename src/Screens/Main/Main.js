@@ -7,7 +7,7 @@ export class Main extends Component {
   render() {
     return (
       <div className="profile">
-        <p1>Тестовый проект на React + Redux</p1>
+        <h1>Тестовый проект на React + Redux</h1>
         <div></div>
       </div>
     );

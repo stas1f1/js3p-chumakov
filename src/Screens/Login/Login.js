@@ -32,19 +32,19 @@ export class Login extends Component {
     return (
       <div className="login">
         <form className="login__form" onSubmit={this.handleSubmit}>
-          <h1>Login here</h1>
+          <h1>Авторизация</h1>
           <input
             type="text"
-            placeholder="Name"
+            placeholder="Логин"
             onChange={(e) => this.setState({ login: e.target.value })}
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Пароль"
             onChange={(e) => this.setState({ password: e.target.value })}
           />
           <button type="submit" className="submit__btn">
-            Submit
+            Авторизоваться
           </button>
         </form>
       </div>
